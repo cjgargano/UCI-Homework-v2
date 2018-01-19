@@ -188,7 +188,15 @@ LEFT JOIN temp1 ON film.film_id = temp1.inventory_id;
 
 -- * 7f. Write a query to display how much business, in dollars, each store brought in.
 -- combine 'store' table w/ the payment table???
-
+SELECT store.store_id, SUM(payment.amount) AS total_amt FROM store
+JOIN inventory
+	ON store.store_id = inventory.store_id
+JOIN rental
+	ON inventory.inventory_id = rental.inventory_id
+JOIN payment
+	ON rental.rental_id = payment.rental_id
+GROUP BY store.store_id
+ORDER BY store.store_id;	
 
 -- * 7g. Write a query to display for each store its store ID, city, and country.
 -- combine (address table w/ city table ON address_id) w/ country table on city_id
@@ -214,8 +222,6 @@ LEFT JOIN payment
 GROUP BY category.name
 ORDER BY total_amt DESC
 LIMIT 5;
-
-/* Need to figure out the SUM portion of it... */
 
 /* -----------------------------------------------------------------*/
 
