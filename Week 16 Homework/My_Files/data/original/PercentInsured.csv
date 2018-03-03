@@ -1,0 +1,53 @@
+id,state,abbr,insured,checkups
+1,Alabama,AL,87.9,72.1
+2,Alaska,AK,82.8,57.8
+3,Arizona,AZ,86.4,63.9
+4,Arkansas,AR,88.2,66.1
+5,California,CA,87.6,66.6
+6,Colorado,CO,89.7,62.7
+7,Connecticut,CT,93.1,72
+8,Delaware,DE,92.2,74
+9,"Washington, D.C.",DC,94.7,74
+10,Florida,FL,83.4,73
+11,Georgia,GA,84.2,71.7
+12,Hawaii,HI,94.7,67.6
+13,Idaho,ID,86.4,58
+14,Illinois,IL,90.3,69.2
+15,Indiana,IN,88.1,65.1
+16,Iowa,IA,93.8,71
+17,Kansas,KS,89.8,67.8
+18,Kentucky,KY,91.5,71.9
+19,Louisiana,LA,85.2,75.5
+20,Maine,ME,89.9,71.8
+21,Maryland,MD,92.1,74.7
+22,Massachusetts,MA,96.7,78.5
+23,Michigan,MI,91.5,71.8
+24,Minnesota,MN,94.1,69.8
+25,Mississippi,MS,85.5,72.6
+26,Missouri,MO,88.3,67
+27,Montana,MT,85.8,63.6
+28,Nebrasak,NE,90.3,63.3
+29,Nevada,NV,84.8,63.8
+30,New Hampshire,NH,90.8,69.3
+31,New Jersey,NJ,89.1,75.9
+32,New Mexico,NM,85.5,62
+33,New York,NY,91.3,74.9
+34,North Carolina,NC,86.9,75.6
+35,North Dakota,ND,92.1,64.3
+36,Ohio,OH,91.6,70.7
+37,Oklahoma,OK,84.6,63.8
+38,Oregon,OR,90.3,62.5
+39,Pennsylvania,PA,91.5,72.6
+40,Rhode Island,RI,92.6,80.3
+41,South Carolina,SC,86.4,67.7
+42,South Dakota,SD,90.2,69.6
+43,Tennessee,TN,88,74.5
+44,Texas,TX,80.9,67.6
+45,Utah,UT,87.5,58
+46,Vermont,VT,95,67.6
+47,Virginia,VI,89.1,73.4
+48,Washington,WA,90.8,64.1
+49,West Virginia,WV,91.4,77.2
+50,Wisconsin,WI,92.7,69.9
+51,Wyoming,WY,88,58.4
+52,Puerto Rico,PR,93.9,76.4
