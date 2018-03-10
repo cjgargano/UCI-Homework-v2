@@ -8,8 +8,8 @@ var map = L.map("map", {
 // Create variable for access token 
 var token = "access_token=pk.eyJ1IjoiY2pnYXJnYW5vIiwiYSI6ImNqZTZod2NqazAwaXIyeGxnZXlqYTFkaTMifQ.-LYkZQludov5zH6v7oy-Ww";
 
-// Dark Map layer (default)
-L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/dark-v9/tiles/256/{z}/{x}/{y}?" + token).addTo(map);
+// Outdoor Map layer (default)
+L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?" + token).addTo(map);
 
 // Outdoor Map
 var outdoors = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?" + token, 
@@ -127,7 +127,7 @@ d3.json(plates, function(data) {
         // onEachFeature - popPlate to add popup for each plate
         onEachFeature: popPlate,
     }).addTo(map);
-    controlLayers.addOverlay(plateLayer, "Fault Lines");
+    controlLayers.addOverlay(plateLayer, "Tectonic Plates");
 
 // Setting up the legend
 var legend = L.control({position: 'bottomleft'});
@@ -140,7 +140,7 @@ legend.onAdd = function (map) {
     // Loop through intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length; i++) {
         div.innerHTML +=
-            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+            '<i style="background:' + getColor(grades[i]) + '"></i> ' +
             grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
     }
 
